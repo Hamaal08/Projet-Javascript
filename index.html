@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Title">
+        <h1>To-Do List</h1>
+    </div>
+    <section class="SectionToDoList">
+        <div class="DivTitleNewTask"><span>Ajouter une nouvelle tâche</span></div>
+        <br>
+        <div class="DivBlockInput">
+            <input type="text" maxlength="50" name="InputToDoList" id="InputToDoList">
+            <button type="button" id="AddTask">Ajouter une tâche</button>
+        </div>
+        <div id="DivErrorMessage" style="display: none;">
+            Veuillez insérer une nouvelle tâche !
+        </div>
+    </section>
+    <section class="DivShowTask" id="DivShowtask">
+        <div id="progressContainer">
+            <label for="progress">Progrès des tâches :</label>
+            <progress id="progress" value="0" max="100"></progress>
+            <span id="progressPercentage">0%</span> <!-- Affichage du pourcentage -->
+        </div>                
+    </section>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,242 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+}
+
+.Title {
+    margin: auto;
+    font-size: 35px;
+}
+
+.SectionToDoList {
+    width: 500px;
+    height: auto;
+    /* border: 2px solid blue; */
+    margin: auto;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-items: center; */
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    padding: 20px;
+    background-color:grey;
+    box-shadow: 2px 2px 5px 5px rgba(0, 2, 0.2, 0.2);
+}
+
+.DivTitleNewTask {
+    margin: auto;
+    /* border: 2px solid black; */
+    height: 50px;
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+}
+
+.DivBlockInput {
+    /* border: 2px solid red; */
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+input {
+    border-radius: 5px;
+    height: 70%;
+    width: 70%;
+    border: none;
+    padding: 10px;
+}
+
+#AddTask {
+    height: 70%;
+    border-radius: 8px;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: aquamarine;
+    border:1px solid black;
+    cursor: pointer;
+}
+
+#AddTask:hover {
+    background-color: azure;
+}
+
+#DivErrorMessage {
+    border: 2px solid white;
+    height: 25px;
+    width: 50%;
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    background-color: white;
+    border: 0px solid black;
+    border-radius: 6px;
+    padding: 5px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.DivShowTask {
+    border: 2px solid black;
+    padding: 15px;
+    width: 500px;
+    height: auto;
+    margin: auto;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 2px 2px 5px 5px rgba(0, 2, 0.2, 0.2);
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: black;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.progress-bar div {
+    height: 100%;
+    background-color: #CAF450;
+    transition:width 0.5s ease-in-out;
+}
+
+
+/* Task Div Descriptions */
+
+/* .DivTask {
+    height: auto;
+    width: 100%;
+    border: 2px solid black;
+    border-radius:10px ;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:grey;
+} */
+
+/* .DivSpanTask {
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 8px;
+    height: 50px;
+    width: 90%;
+    margin: auto;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+} */
+
+/* #DeleteBtn {
+    height: 35px;
+    border-radius: 10px;
+    background-color: red;
+    border:1px solid white;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 15px;
+    margin-top: 15px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+} */
+/* // Exemplaire HTML d'une tâche créée
+<div class="DivTask" id="DivTask">
+                <div class="DivSpanTask" id="EndTask">
+                    <span id="SpanTask">Bonjour, je suis un test et je verrai le résultat.</span>
+                </div>
+                <button type="reset" id="DeleteBtn">Supprimer la tâche</button>
+            </div>
+*/
+
+
+/* Nouveaux éléments créés */
+
+#DivTask0 {
+    height: auto;
+    width: 100%;
+    border: 2px solid black;
+    border-radius:10px ;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:grey;
+    /* text-decoration: line-through; */ /* Permet de barrer le texte */
+}
+
+#EndTask0 {
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 8px;
+    height: 50px;
+    width: 90%;
+    margin: auto;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#DeleteBtn0 {
+    height: 35px;
+    border-radius: 10px;
+    background-color: red;
+    border:1px solid white;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 15px;
+    margin-top: 15px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
